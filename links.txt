@@ -1,0 +1,4 @@
+https://www.server-world.info/en/note?os=CentOS_7&p=kvm&f=12
+https://www.cloudgardens.eu/blog/vmware-esxi-running-under-qemu-kvm/
+https://fabianlee.org/2018/09/19/kvm-deploying-a-nested-version-of-vmware-esxi-6-7-inside-kvm/
+

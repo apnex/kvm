@@ -1,0 +1,8 @@
+<network>
+	<name>pxe</name>
+	<uuid>1b43090f-37f1-4088-9ad9-ff66e9c084d8</uuid>
+	<forward mode='nat'/>
+	<bridge name='virbr1' stp='on' delay='0'/>
+	<mac address='52:54:00:d2:de:2b'/>
+	<ip address='172.16.0.10' netmask='255.255.255.0'></ip>
+</network>

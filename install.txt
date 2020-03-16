@@ -1,0 +1,14 @@
+## update qcow2 guest info
+dnf install libguestfs-tools
+guestfish --rw -i -a nsx-manager1-build.qcow2 upload guestinfo /config/guestinfo
+
+## boot vm
+virt-install --import \
+	--name nsx-manager \
+	--ram 8192 \
+	--vcpus 4 \
+	--network=bridge:br0,model=e1000 \
+	--nographics \
+	--disk format=qcow2,path=\
+#nsx-unified-appliance-2.3.1.0.0.11294305.qcow2
+#--disk path=nsx-manager-1.1.0.0.0.4446302.qcow2,format=qcow2
