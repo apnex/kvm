@@ -4,6 +4,9 @@
 # echo 'options kvm_intel nested=1' >> /etc/modprobe.d/kvm.conf
 # echo 'options kvm ignore_msrs=1' >> /etc/modprobe.d/kvm.conf
 
+# disable selinux /etc/selinux/config
+# set libvirt user/group to "apnex" in /etc/libvirtd/qemu.conf
+
 virt-host-validate
 egrep -c '(vmx|svm)' /proc/cpuinfo
 cat /proc/cmdline
