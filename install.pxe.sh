@@ -4,7 +4,7 @@ virt-install \
 	--name esx.pxe \
 	--memory 4096 \
 	--vcpus 4 \
-	--cpu Westmere,require=vmx \
+	--cpu Broadwell-noTSX-IBRS,require=vmx \
 	--features kvm_hidden=on \
 	--virt-type=kvm \
 	--os-type=generic \

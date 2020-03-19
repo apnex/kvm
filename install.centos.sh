@@ -6,7 +6,7 @@ virt-install \
 	--vcpus 2 \
 	--os-variant centos7.0 \
 	--cdrom centos.iso \
-	--cpu Westmere,require=vmx \
+	--cpu Broadwell-noTSX-IBRS,require=vmx \
 	--features kvm_hidden=on \
 	--disk path=centos.pxe.qcow2,format=qcow2,bus=sata,size=8 \
 	--boot hd,cdrom,network \
